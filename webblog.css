@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    text-decoration: none;
+    list-style-type: none;
+}
+html{
+    background-color: #fafafa;
+    font-size: large;
+    scroll-behavior: smooth;
+    /* font-family: 'Italianno', cursive; */
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+.section-center{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* header starte here */
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo{
+    font-size: 4rem;
+}
+nav{
+    display: flex;
+}
+#menu-icon{
+    display: none;
+}
+nav li{
+   margin: 10px;
+   padding: 10px;
+   transition: all 0.4s;
+}
+nav li:hover{
+    background-color: blue;
+    border-radius: 6px;
+}
+.nav-link{
+    color: white;
+}
+/* header ends here */
+
+
+/* banner section starte here */
+#banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+.banner-img{
+    height: 30rem;
+    width: 44rem;
+    border: 0.3rem solid;
+}
+.banner-heading{
+    background-color: black;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    margin-bottom: 1rem;
+}
+.banner-desc{
+    text-align: justify;
+    font-size: 1.3rem;
+}
+#banner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+#banner-section aside{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+/* banner section ends here */
+
+
+/* about-me section start here */
+#about-me{
+    min-height: 95vh;
+    padding: 5rem 1rem;
+    background-color: #4c4c4c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-heading{
+    color: #fff;
+    font-family: 'Italianno', cursive;
+    font-size: 6rem;
+}
+.card-header{
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+}
+p{
+    text-align: justify;
+    font-size: 1rem;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: #a09d9d;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-btn{
+    width: 80%;
+    padding: 10px;
+    background-color: rgb(230, 159, 8);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    margin-top: 50px;
+    align-self: center;
+}
+.btn{
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.archaive-heading{
+    font-family: 'Italianno', cursive;
+    font-size: 6rem;
+    text-align: center;
+}
+/* about-me section ends here */
+
+
+/* archaive section starte here */
+#archaive{
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+.archaive-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1rem;
+    border-top: 1rem;
+}
+.archaive-container-lists{
+    display: flex;
+    text-align: center;
+}
+.archaive-container-list{
+    margin: 2rem;
+    transition: 0.4s;
+}
+.archaive-container-list:hover{
+    transform: scale(1.1);
+}
+.archaive-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+}
+/* archaive section ends here */
+
+
+/* blog-posts starte here */
+#blog-posts{
+    padding: 5rem;
+    min-height: 95vh;
+}
+.blog-post-heading{
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+}
+.blog-post{
+    width: 95%;
+    display: flex;
+    margin: 1.5rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    transition: transform 0.4s;
+}
+.blog-post:hover{
+    transform: scale(1.05);
+}
+.blog-post aside{
+    flex: 1;
+}
+.blog-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1.5rem;
+}
+.blog-img{
+    width: 400px;
+    height: 300px;
+}
+article{
+    padding: 15px;
+}
+.blog-heading{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.blog-subheading{
+    font-size: 1.8rem;
+}
+.btn-blog{
+    width: 40%;
+    padding: 10px;
+    background-color: rgb(230, 159, 8);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    margin-top: 40px;
+}
+/* blog-posts ends here */
+
+/* contact section starte here */
+#contace-section{
+    background-color: #4c4c4c;
+    color: white;
+}
+#contact-form{
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.form-control label{
+    font-size: 1rem;
+    flex: 0.3;
+    width: 40rem;
+}
+input, textarea{
+    flex: 0.7;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    padding: 2rem 1rem;
+}
+textarea{
+    resize: none;
+    height: 12vh;
+}
+.contact-heading{
+    font-family: 'Italianno', cursive;
+    font-size: 6rem;
+}
+.contact-btn{
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(230, 159, 8);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    margin-top: 50px;
+    align-self: center;
+}
+.form-btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+/* contact section ends here */
+
+/* footer section start here */
+footer{
+    background-color: #222;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.footer-des{
+    padding-top: 1.5rem;
+    color: #fff;
+}
+/* footer section start here */
+
+/* responsive design starte here */
+@media (max-width: 992px){
+    #banner-section{
+        flex-direction: column;
+    }
+    #banner-section article{
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 768px){
+    #archaive{
+        min-height: auto;
+    }
+    #menu-icon{
+        display: block;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+    .archaive-container-list{
+        flex-wrap: wrap;
+    }
+    .blog-post{
+        flex-direction: column;
+        margin-right: 3rem;
+       width: 80%;
+    }
+}
+@media (max-width: 600px){
+    html{
+        font-size: 48.5%;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+        padding-left: 2.5rem;
+    }
+    nav li{
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+    }
+    
+}
+@media (max-width: 400px){
+    
+}
+/* responsive design ends here */
+
